@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProxyLibrary", "ProxyLibrary\ProxyLibrary.csproj", "{CDDD0EDD-9197-483D-8911-CB7816C0D7B4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProxyLibrary_sample1", "ProxyLibrary_sample1\ProxyLibrary_sample1.csproj", "{8F82F605-8FDB-44E7-9A42-34DA36829C9B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{CDDD0EDD-9197-483D-8911-CB7816C0D7B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CDDD0EDD-9197-483D-8911-CB7816C0D7B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CDDD0EDD-9197-483D-8911-CB7816C0D7B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F82F605-8FDB-44E7-9A42-34DA36829C9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F82F605-8FDB-44E7-9A42-34DA36829C9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F82F605-8FDB-44E7-9A42-34DA36829C9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F82F605-8FDB-44E7-9A42-34DA36829C9B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
