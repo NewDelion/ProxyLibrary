@@ -1,0 +1,5 @@
+E:\C#_Project\ProxyLibrary\ProxyLibrary\bin\Debug\ProxyLibrary.dll
+E:\C#_Project\ProxyLibrary\ProxyLibrary\bin\Debug\ProxyLibrary.pdb
+E:\C#_Project\ProxyLibrary\ProxyLibrary\obj\Debug\ProxyLibrary.csprojResolveAssemblyReference.cache
+E:\C#_Project\ProxyLibrary\ProxyLibrary\obj\Debug\ProxyLibrary.dll
+E:\C#_Project\ProxyLibrary\ProxyLibrary\obj\Debug\ProxyLibrary.pdb
