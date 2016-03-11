@@ -105,7 +105,7 @@ namespace ProxyLibrary
                     }
                     if (result == null)
                         continue;
-                    if (result.result == AnalyzeResult.Command.Send)
+                    if (result.result == Command.Send)
                     {
                         this.sendPacket(result.packet);
                     }
@@ -247,12 +247,12 @@ namespace ProxyLibrary
 
         public virtual AnalyzeResult AnalyzeServer(Client client, Packet packet)
         {
-            return new AnalyzeResult(AnalyzeResult.Command.Send, new Packet(packet.buffer, client.address));
+            return new AnalyzeResult(Command.Send, new Packet(packet.buffer, client.address));
         }
 
         public virtual AnalyzeResult AnalyzeClient(Client client, Packet packet)
         {
-            return new AnalyzeResult(AnalyzeResult.Command.Send, new Packet(packet.buffer, client.ConnectingServer.address));
+            return new AnalyzeResult(Command.Send, new Packet(packet.buffer, client.ConnectingServer.address));
         }
     }
 }
