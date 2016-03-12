@@ -101,7 +101,9 @@ namespace ProxyLibrary
                             this.addClient(new Client(packet.address, this.getServer(0)));
                         Client client = this.getClient(packet.address);
                         result = this.AnalyzeClient(client, packet);
-                        result.packet.buffer = client.header.Concat(result.packet.buffer).ToArray();
+                        if (result != null)
+                            if (result.packet != null)
+                                result.packet.buffer = client.header.Concat(result.packet.buffer).ToArray();
                     }
                     if (result == null)
                         continue;
