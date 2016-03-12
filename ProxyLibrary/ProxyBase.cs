@@ -247,6 +247,20 @@ namespace ProxyLibrary
             return result;
         }
 
+        public void SwitchServer(IPEndPoint client_address, Server server)
+        {
+            try
+            {
+                this.rwlock_ClientList.AcquireWriterLock(Timeout.Infinite);
+                Client c = this.ClientList.Find((d) => d.address.Equals(client_address));
+                c.ConnectingServer = server.clone();
+            }
+            finally
+            {
+                this.rwlock_ClientList.ReleaseLock();
+            }
+        }
+
         public virtual AnalyzeResult AnalyzeServer(Client client, Packet packet)
         {
             return new AnalyzeResult(Command.Send, new Packet(packet.buffer, client.address));
